@@ -1,0 +1,11 @@
+.cabecalho {
+    display: flex;
+    font-weight: 500;
+    padding-left: 16px;
+    border-bottom: 1px solid #a8a5a6;
+}
+
+.cabecalho .titulo{
+    font-weight: 500;
+    color: #303692;
+}

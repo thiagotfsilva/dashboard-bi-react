@@ -1,19 +1,12 @@
-import { useApiContext } from './hook/useApiContext';
-
+/* import { useApiContext } from './hook/useApiContext'; */
+import Cabecalho from './components/Cabecalho';
 function App() {
-  const { obejtivosFetch } = useApiContext();
+  // const { obejtivosFetch } = useApiContext();
 
   return (
     <div className="app">
       <div className="container">
-        <select>
-          {obejtivosFetch &&
-            obejtivosFetch.map((objetivo) => (
-              <option value={objetivo.id} key={objetivo.id}>
-                {objetivo.nome}
-              </option>
-            ))}
-        </select>
+        <Cabecalho />
       </div>
     </div>
   );
